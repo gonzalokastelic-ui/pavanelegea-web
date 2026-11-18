@@ -1,0 +1,110 @@
+/* =========================================================
+   MODO BOCETO (baja fidelidad)
+   Se activa abriendo la web con ?boceto  (ej: index.html?boceto)
+   Muestra estructura y recorrido sin el diseño final:
+   grises, cajas tachadas en lugar de fotos, "LOGO" en lugar del logo,
+   tipografía genérica y sin animaciones.
+   ========================================================= */
+
+html.lofi {
+  --navy: #555;
+  --navy-950: #3a3a3a;
+  --navy-900: #444;
+  --navy-800: #4d4d4d;
+  --navy-700: #555;
+  --navy-600: #777;
+  --sand: #d0d0d0;
+  --sand-600: #9a9a9a;
+  --sand-100: #ededed;
+  --sand-ink: #555;
+  --paper: #f3f3f3;
+  --paper-2: #e6e6e6;
+  --ink: #222;
+  --muted: #666;
+  --line: #c4c4c4;
+  --line-dark: rgba(255,255,255,.25);
+  --wa: #9a9a9a;
+  --font-display: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-body: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --r-card: 2px;
+  --r-ctrl: 2px;
+  --r-tag: 2px;
+}
+html.lofi *, html.lofi *::before, html.lofi *::after { animation: none !important; transition: none !important; }
+html.lofi h1, html.lofi h2, html.lofi h3 { font-weight: 700; letter-spacing: 0; }
+
+/* Fotos: caja gris tachada con la palabra "Foto" */
+html.lofi .hero__media img,
+html.lofi .bento__card img,
+html.lofi .prop__media img,
+html.lofi .dev__media img,
+html.lofi .estudio__photo img,
+html.lofi .gallery__track img,
+html.lofi .gallery__thumbs img { opacity: 0 !important; }
+
+html.lofi .hero__media,
+html.lofi .bento__card--lg .bezel__core,
+html.lofi .prop__media,
+html.lofi .dev__media,
+html.lofi .estudio__photo,
+html.lofi .gallery__track,
+html.lofi .gallery__thumbs button {
+  background-color: #e2e2e2 !important;
+  background-image:
+    linear-gradient(to top right, transparent calc(50% - 1px), #b8b8b8 50%, transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1px), #b8b8b8 50%, transparent calc(50% + 1px)) !important;
+  box-shadow: inset 0 0 0 1px #b8b8b8;
+}
+html.lofi .hero__media::after,
+html.lofi .prop__media::after,
+html.lofi .estudio__photo::after,
+html.lofi .dev__media::after {
+  content: "Foto"; position: absolute; inset: auto; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  height: auto; padding: 4px 10px; background: #e2e2e2; color: #777; font: 600 .9rem Arial, sans-serif;
+}
+html.lofi .prop__media, html.lofi .estudio__photo { position: relative; }
+html.lofi .bento__card--lg .bezel__core::after { content: none; }
+html.lofi .bento__body--over { color: var(--ink); }
+html.lofi .bento__body--over p { opacity: 1; }
+
+/* Logos: recuadro con la palabra LOGO */
+html.lofi .nav__logo img, html.lofi .footer__brand img, html.lofi .estudio__badge img { visibility: hidden; }
+html.lofi .nav__logo { aspect-ratio: auto; width: 150px; height: 48px; display: grid; place-items: center; border: 1.5px dashed currentColor; color: #fff; }
+html.lofi .nav.is-scrolled .nav__logo, html.lofi .nav.is-solid .nav__logo { color: #555; }
+html.lofi .nav__logo::after { content: "LOGO"; font: 700 .9rem Arial, sans-serif; letter-spacing: .1em; }
+html.lofi .footer__brand img { height: 60px; width: 150px; }
+html.lofi .footer__brand { position: relative; }
+html.lofi .footer__brand::before { content: "LOGO"; position: absolute; top: 0; left: 0; width: 150px; height: 60px; display: grid; place-items: center; border: 1.5px dashed rgba(255,255,255,.5); font: 700 .9rem Arial, sans-serif; letter-spacing: .1em; color: rgba(255,255,255,.7); }
+html.lofi .estudio__badge img { width: 44px; height: 44px; background: none; border: 1.5px dashed rgba(255,255,255,.6); }
+
+/* Etiqueta fija: aunque se abra en pantalla completa, queda claro que es un boceto */
+html.lofi body::before {
+  content: "Boceto · no es el diseño final (tipografía, colores, logo y fotos son provisorios)";
+  position: fixed; left: 12px; bottom: 12px; z-index: 80; max-width: calc(100% - 100px);
+  padding: 8px 12px; border-radius: 2px; background: #222; color: #fff;
+  font: 600 .82rem/1.35 Arial, sans-serif; pointer-events: none;
+}
+
+/* Cabecera siempre blanca: sobre la caja gris de la foto los links blancos no se leerían */
+html.lofi .nav { background: #fff; box-shadow: 0 1px 0 var(--line); }
+html.lofi .nav .nav__links a { color: #333; }
+html.lofi .nav .nav__logo { color: #555; }
+html.lofi .nav .burger { color: #333; box-shadow: inset 0 0 0 1px var(--line); }
+
+/* Sin adornos ni avisos de diseño */
+html.lofi .floors, html.lofi .demo-note { display: none !important; }
+
+/* Botones y campos como cajas simples */
+html.lofi .btn--sand { --bg: #fff; --fg: #222; --bg-h: #eee; box-shadow: inset 0 0 0 1.5px #555; }
+html.lofi .btn--wa { --fg: #fff; }
+html.lofi .wa-float__btn { box-shadow: none; }
+html.lofi .seg button[aria-checked="true"], html.lofi .seg__ind { background-color: #555; }
+html.lofi .chip--sand { background: #fff; color: #333; box-shadow: inset 0 0 0 1px #888; }
+html.lofi .hero__link { text-decoration-color: currentColor; }
+html.lofi .bento__icon, html.lofi .direct__ic, html.lofi .feats svg, html.lofi .specs svg { color: inherit; }
+html.lofi .direct__item--wa .direct__ic { color: #fff; }
+html.lofi .field input, html.lofi .field textarea, html.lofi .field select { background-color: #4d4d4d; }
+html.lofi .field label, html.lofi .field--select label,
+html.lofi .field input:focus + label, html.lofi .field input:not(:placeholder-shown) + label,
+html.lofi .field textarea:focus + label, html.lofi .field textarea:not(:placeholder-shown) + label { color: #ddd; }
+html.lofi .progress__bar i { background: #888; }

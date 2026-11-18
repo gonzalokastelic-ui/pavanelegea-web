@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Pavanel Egea Propiedades · Inmobiliaria, desarrollos y estudio jurídico</title>
+  <meta name="description" content="Compra, venta y alquiler de casas y departamentos, desarrollos propios en construcción y asesoramiento jurídico inmobiliario. Pavanel Egea Propiedades.">
+  <meta name="theme-color" content="#161f29">
+  <meta property="og:title" content="Pavanel Egea Propiedades">
+  <meta property="og:description" content="Imaginando un futuro junto a vos. Inmobiliaria, desarrollos y estudio jurídico.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo-vertical.png">
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="apple-touch-icon" href="img/isotipo.png">
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/urbanist-normal.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/source-sans-3-normal.woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- ?v=N: subir el número al publicar cambios, así nadie ve una versión vieja en caché -->
+  <link rel="stylesheet" href="css/styles.css?v=2">
+  <!-- Modo boceto (baja fidelidad) para presentar la estructura: index.html?boceto -->
+  <link rel="stylesheet" href="css/lofi.css?v=2">
+  <script>
+    document.documentElement.classList.add('js');
+    if (/[?&]boceto\b/.test(location.search)) document.documentElement.classList.add('lofi');
+  </script>
+</head>
+<body>
+
+  <!-- ============ Iconos: Phosphor Icons (Light), licencia MIT ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur"/>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo"/>
+        <feBlend in="SourceGraphic" in2="goo"/>
+      </filter>
+    </defs>
+    <symbol id="i-arrow" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 256 256" fill="currentColor"><path d="M216,74H30V48a6,6,0,0,0-12,0V208a6,6,0,0,0,12,0V174H242v34a6,6,0,0,0,12,0V112A38,38,0,0,0,216,74ZM30,86h76v76H30Zm88,76V86h98a26,26,0,0,1,26,26v50Z"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 256 256" fill="currentColor"><path d="M240,98H206V96a6,6,0,0,0-6-6H136a6,6,0,0,0-6,6v2H62V52A14,14,0,0,1,76,38,14.47,14.47,0,0,1,90.12,49.19a6,6,0,1,0,11.76-2.38A26.32,26.32,0,0,0,76,26,26,26,0,0,0,50,52V98H16a6,6,0,0,0-6,6v40a54.06,54.06,0,0,0,54,54h2v18a6,6,0,0,0,12,0V198H178v18a6,6,0,0,0,12,0V198h2a54.06,54.06,0,0,0,54-54V104A6,6,0,0,0,240,98Zm-98,4h52v36H142Zm92,42a42,42,0,0,1-42,42H64a42,42,0,0,1-42-42V110H130v34a6,6,0,0,0,6,6h64a6,6,0,0,0,6-6V110h28Z"/></symbol>
+    <symbol id="i-area" viewBox="0 0 256 256" fill="currentColor"><path d="M214,48V88a6,6,0,0,1-12,0V54H168a6,6,0,0,1,0-12h40A6,6,0,0,1,214,48ZM88,202H54V168a6,6,0,0,0-12,0v40a6,6,0,0,0,6,6H88a6,6,0,0,0,0-12Zm120-40a6,6,0,0,0-6,6v34H168a6,6,0,0,0,0,12h40a6,6,0,0,0,6-6V168A6,6,0,0,0,208,162ZM88,42H48a6,6,0,0,0-6,6V88a6,6,0,0,0,12,0V54H88a6,6,0,0,0,0-12Z"/></symbol>
+    <symbol id="i-door" viewBox="0 0 256 256" fill="currentColor"><path d="M232,218H206V40a14,14,0,0,0-14-14H64A14,14,0,0,0,50,40V218H24a6,6,0,0,0,0,12H232a6,6,0,0,0,0-12ZM62,40a2,2,0,0,1,2-2H192a2,2,0,0,1,2,2V218H62Zm104,92a10,10,0,1,1-10-10A10,10,0,0,1,166,132Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></symbol>
+    <symbol id="i-photos" viewBox="0 0 256 256" fill="currentColor"><path d="M216,42H72A14,14,0,0,0,58,56V74H40A14,14,0,0,0,26,88V200a14,14,0,0,0,14,14H184a14,14,0,0,0,14-14V182h18a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM70,56a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2v67.57L204.53,110.1a14,14,0,0,0-19.8,0l-21.42,21.41L117.9,86.1a14,14,0,0,0-19.8,0L70,114.2ZM186,200a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V88a2,2,0,0,1,2-2H58v82a14,14,0,0,0,14,14H186Zm30-30H72a2,2,0,0,1-2-2V131.17l36.58-36.58a2,2,0,0,1,2.83,0l49.66,49.66a6,6,0,0,0,8.49,0l25.65-25.66a2,2,0,0,1,2.83,0l22,22V168A2,2,0,0,1,216,170ZM162,84a10,10,0,1,1,10,10A10,10,0,0,1,162,84Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,76.24l-128,128a6,6,0,0,1-8.48,0l-56-56a6,6,0,0,1,8.48-8.48L96,191.51,219.76,67.76a6,6,0,0,1,8.48,8.48Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 256 256" fill="currentColor"><path d="M128,82a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162ZM176,26H80A54.06,54.06,0,0,0,26,80v96a54.06,54.06,0,0,0,54,54h96a54.06,54.06,0,0,0,54-54V80A54.06,54.06,0,0,0,176,26Zm42,150a42,42,0,0,1-42,42H80a42,42,0,0,1-42-42V80A42,42,0,0,1,80,38h96a42,42,0,0,1,42,42ZM190,76a10,10,0,1,1-10-10A10,10,0,0,1,190,76Z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 256 256" fill="currentColor"><path d="M186.68,146.63l-32-16a6,6,0,0,0-6,.38L133,141.46A42.49,42.49,0,0,1,114.54,123L125,107.33a6,6,0,0,0,.38-6l-16-32A6,6,0,0,0,104,66a38,38,0,0,0-38,38,86.1,86.1,0,0,0,86,86,38,38,0,0,0,38-38A6,6,0,0,0,186.68,146.63ZM152,178a74.09,74.09,0,0,1-74-74,26,26,0,0,1,22.42-25.75l12.66,25.32-10.39,15.58a6,6,0,0,0-.54,5.63,54.43,54.43,0,0,0,29.07,29.07,6,6,0,0,0,5.63-.54l15.58-10.39,25.32,12.66A26,26,0,0,1,152,178ZM128,26A102,102,0,0,0,38.35,176.69L26.73,211.56a14,14,0,0,0,17.71,17.71l34.87-11.62A102,102,0,1,0,128,26Zm0,192a90,90,0,0,1-45.06-12.08,6.09,6.09,0,0,0-3-.81,6.2,6.2,0,0,0-1.9.31L40.65,217.88a2,2,0,0,1-2.53-2.53L50.58,178a6,6,0,0,0-.5-4.91A90,90,0,1,1,128,218Z"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 256 256" fill="currentColor"><path d="M237.57,133.77l-32-80h0a6,6,0,0,0-6.86-3.63L134,64.52V40a6,6,0,0,0-12,0V67.19l-67.3,15a6,6,0,0,0-4.27,3.63h0v0l-32,80A6.1,6.1,0,0,0,18,168c0,21.86,23.31,30,38,30s38-8.14,38-30a6.1,6.1,0,0,0-.43-2.23L64.19,92.33,122,79.48V210H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12H134V76.81l56.21-12.49-27.78,69.45A6.1,6.1,0,0,0,162,136c0,21.86,23.31,30,38,30s38-8.14,38-30A6.1,6.1,0,0,0,237.57,133.77ZM56,186a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C81.06,182.85,62.58,186,56,186Zm144-32a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C225.06,150.85,206.58,154,200,154Z"/></symbol>
+    <symbol id="i-crane" viewBox="0 0 256 256" fill="currentColor"><path d="M227.09,18.86a6,6,0,0,0-5.91-.15L102.5,82H32A14,14,0,0,0,18,96V200a14,14,0,0,0,14,14h88a14,14,0,0,0,14-14V168a6.28,6.28,0,0,0-.25-1.72L111.16,91,218,34V160a2,2,0,0,1-2,2H200a2,2,0,0,1-2-2v-8a6,6,0,0,0-12,0v8a14,14,0,0,0,14,14h16a14,14,0,0,0,14-14V24A6,6,0,0,0,227.09,18.86ZM99.54,94l20.4,68H62V94ZM32,94H50v68H30V96A2,2,0,0,1,32,94Zm88,108H32a2,2,0,0,1-2-2V174h92v26A2,2,0,0,1,120,202Z"/></symbol>
+    <symbol id="i-key" viewBox="0 0 256 256" fill="currentColor"><path d="M215.15,40.85A78,78,0,0,0,86.2,121.31l-56.1,56.1a13.94,13.94,0,0,0-4.1,9.9V216a14,14,0,0,0,14,14H72a6,6,0,0,0,6-6V206H96a6,6,0,0,0,6-6V182h18a6,6,0,0,0,4.24-1.76l10.45-10.44A77.59,77.59,0,0,0,160,174h.1A78,78,0,0,0,215.15,40.85ZM226,98.16c-1.12,35.16-30.67,63.8-65.88,63.84a65.93,65.93,0,0,1-24.51-4.67,6,6,0,0,0-6.64,1.26L117.51,170H96a6,6,0,0,0-6,6v18H72a6,6,0,0,0-6,6v18H40a2,2,0,0,1-2-2V187.31a2,2,0,0,1,.58-1.41l58.83-58.83a6,6,0,0,0,1.26-6.64A65.61,65.61,0,0,1,94,95.92C94,60.71,122.68,31.16,157.83,30A66,66,0,0,1,226,98.16ZM190,76a10,10,0,1,1-10-10A10,10,0,0,1,190,76Z"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 256 256" fill="currentColor"><path d="M200,34H160a14,14,0,0,0-14,14V208a14,14,0,0,0,14,14h40a14,14,0,0,0,14-14V48A14,14,0,0,0,200,34Zm2,174a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2V48a2,2,0,0,1,2-2h40a2,2,0,0,1,2,2ZM96,34H56A14,14,0,0,0,42,48V208a14,14,0,0,0,14,14H96a14,14,0,0,0,14-14V48A14,14,0,0,0,96,34Zm2,174a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V48a2,2,0,0,1,2-2H96a2,2,0,0,1,2,2Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 256 256" fill="currentColor"><path d="M231.36,116.19,87.28,28.06a14,14,0,0,0-14.18-.27A13.69,13.69,0,0,0,66,39.87V216.13a13.690,13.690,0,0,0,7.1,12.08,14,14,0,0,0,14.18-.27l144.08-88.13a13.82,13.82,0,0,0,0-23.62Zm-6.26,13.38L81,217.7a2,2,0,0,1-2.06,0,1.78,1.78,0,0,1-1-1.61V39.87a1.78,1.78,0,0,1,1-1.61A2.06,2.06,0,0,1,80,38a2,2,0,0,1,1,.31L225.1,126.43a1.82,1.820,0,0,1,0,3.14Z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ Cabecera ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__bar wrap">
+      <a href="#inicio" class="nav__logo" aria-label="Pavanel Egea Propiedades, inicio">
+        <img class="logo-light" src="img/logo-horizontal-light.png" alt="Pavanel Egea Propiedades" width="1284" height="500">
+        <img class="logo-dark" src="img/logo-horizontal.png" alt="" width="1284" height="500" aria-hidden="true">
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#propiedades">Propiedades</a>
+        <a href="#desarrollos">Desarrollos</a>
+        <a href="#estudio">Estudio jurídico</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn--sand btn--sm nav__cta">
+        <span>Consultar</span>
+      </a>
+      <!-- Hamburguesa con etiqueta visible: el ícono solo no siempre se entiende (antislop layoutmobile) -->
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">
+        <span class="burger__lines" aria-hidden="true"><i></i><i></i></span>
+        <span class="burger__label">Menú</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú mobile -->
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__links" aria-label="Menú mobile">
+      <a href="#propiedades">Propiedades</a>
+      <a href="#desarrollos">Desarrollos</a>
+      <a href="#estudio">Estudio jurídico</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--wa" data-wa href="#">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>
+        <span>Consultar por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ============ HERO: bloque azul de marca + foto (como el cartel del manual) ============ -->
+    <section class="hero" id="inicio" data-nav="dark" aria-label="Presentación">
+      <div class="hero__panel">
+        <div class="hero__content">
+          <h1 class="hero__title">Imaginando un futuro junto a vos.</h1>
+          <p class="hero__lead">Venta y alquiler de propiedades, desarrollos propios y estudio jurídico. Todo en un mismo lugar, con respaldo legal.</p>
+          <div class="hero__ctas">
+            <a href="#propiedades" class="btn btn--sand btn--lg">
+              <span>Ver propiedades</span>
+              <!-- Única flecha de la página: indica que el botón baja al listado -->
+              <svg aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </a>
+            <a href="#contacto" class="hero__link">Consultar</a>
+          </div>
+        </div>
+        <!-- Motivo de marca: las líneas horizontales del isotipo (los pisos del edificio) -->
+        <div class="floors hero__floors" aria-hidden="true"></div>
+      </div>
+      <div class="hero__media">
+        <!-- Imagen principal en el HTML con prioridad alta: es lo primero que se pinta (LCP) -->
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=75" srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=72 800w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=75 1400w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=72 2000w" sizes="(max-width: 900px) 100vw, 58vw" width="1400" height="934" alt="Casa contemporánea iluminada al atardecer" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- ============ QUÉ HACEMOS (bento) ============ -->
+    <section class="section section--paper" id="servicios" data-nav="light" aria-labelledby="serv-title">
+      <!-- (antes "QUÉ HACEMOS") -->
+      <div class="wrap">
+        <div class="head reveal">
+          <h2 id="serv-title" class="h2">Un mismo equipo para tu próxima propiedad.</h2>
+          <p class="head__lead">Unimos la experiencia inmobiliaria con un estudio jurídico propio, para que cada operación sea clara y segura.</p>
+        </div>
+
+        <div class="bento">
+          <a href="#propiedades" class="bento__card bento__card--lg reveal" style="--d:0">
+            <div class="bezel"><div class="bezel__core">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy">
+              <div class="bento__body bento__body--over">
+                <span class="bento__icon"><svg><use href="#i-key"/></svg></span>
+                <h3>Inmobiliaria</h3>
+                <p>Casas y departamentos en venta y alquiler, con tasación y acompañamiento de principio a fin.</p>
+                <span class="bento__go">Ver propiedades</span>
+              </div>
+            </div></div>
+          </a>
+          <a href="#desarrollos" class="bento__card reveal" style="--d:1">
+            <div class="bezel"><div class="bezel__core bezel__core--navy">
+              <div class="floors bento__floors" aria-hidden="true"></div>
+              <div class="bento__body">
+                <span class="bento__icon"><svg><use href="#i-crane"/></svg></span>
+                <h3>Desarrollos</h3>
+                <p>Proyectos propios en construcción y próximos lanzamientos para vivir o invertir.</p>
+                <span class="bento__go">Ver desarrollos</span>
+              </div>
+            </div></div>
+          </a>
+          <a href="#estudio" class="bento__card reveal" style="--d:2">
+            <div class="bezel"><div class="bezel__core bezel__core--sand">
+              <div class="bento__body">
+                <span class="bento__icon"><svg><use href="#i-scale"/></svg></span>
+                <h3>Estudio jurídico</h3>
+                <p>Contratos, boletos, sucesiones y estudio de títulos para operar con tranquilidad.</p>
+                <span class="bento__go">Ver el estudio</span>
+              </div>
+            </div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROPIEDADES ============ -->
+    <section class="section section--paper section--tight-top" id="propiedades" data-nav="light" aria-labelledby="prop-title">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2 id="prop-title" class="h2">Propiedades disponibles</h2>
+          <p class="head__lead">Filtrá por operación, tipo y moneda. Cada propiedad tiene su ficha con fotos para consultar al instante.</p>
+          <p class="demo-note" data-demo-note hidden>Contenido de ejemplo: fotos, precios y datos se reemplazan por los reales antes de publicar.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filtros de propiedades">
+          <div class="seg" data-filter="operacion" role="radiogroup" aria-label="Operación">
+            <span class="seg__ind" aria-hidden="true"></span>
+            <button role="radio" aria-checked="true" data-value="todas">Todas</button>
+            <button role="radio" aria-checked="false" data-value="venta">Venta</button>
+            <button role="radio" aria-checked="false" data-value="alquiler">Alquiler</button>
+          </div>
+          <div class="seg" data-filter="tipo" role="radiogroup" aria-label="Tipo de propiedad">
+            <span class="seg__ind" aria-hidden="true"></span>
+            <button role="radio" aria-checked="true" data-value="todos">Todos</button>
+            <button role="radio" aria-checked="false" data-value="departamento">Departamentos</button>
+            <button role="radio" aria-checked="false" data-value="casa">Casas</button>
+          </div>
+          <div class="seg" data-filter="moneda" role="radiogroup" aria-label="Moneda">
+            <span class="seg__ind" aria-hidden="true"></span>
+            <button role="radio" aria-checked="true" data-value="todas">Todas</button>
+            <button role="radio" aria-checked="false" data-value="ARS">Pesos</button>
+            <button role="radio" aria-checked="false" data-value="USD">Dólares</button>
+          </div>
+          <p class="filters__count" id="propCount" aria-live="polite"></p>
+        </div>
+
+        <div class="grid-props" id="propGrid"></div>
+        <div class="empty" id="propEmpty" hidden>
+          <p>No hay propiedades con esos filtros por ahora.</p>
+          <a class="btn btn--ghost-dark" data-wa data-wa-msg="¡Hola! Estoy buscando una propiedad y no encontré lo que necesito en la web." href="#">
+            <span>Contanos qué buscás</span><span class="btn__icon"><svg><use href="#i-wa"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESARROLLOS ============ -->
+    <section class="section section--tint" id="desarrollos" data-nav="light" aria-labelledby="dev-title">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2 id="dev-title" class="h2">Desarrollos que estamos construyendo.</h2>
+          <p class="head__lead">Seguí el avance de obra de nuestros proyectos y enterate primero de los próximos lanzamientos.</p>
+          <p class="demo-note" data-demo-note hidden>Contenido de ejemplo: nombres, avances y fechas se reemplazan por los reales antes de publicar.</p>
+        </div>
+        <div class="devs" id="devList"></div>
+      </div>
+    </section>
+
+    <!-- ============ ESTUDIO JURÍDICO ============ -->
+    <section class="section section--paper" id="estudio" data-nav="light" aria-labelledby="est-title">
+      <div class="wrap estudio">
+        <div class="estudio__media reveal">
+          <div class="estudio__photo">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1100&q=70" alt="Firma de documentos en una operación inmobiliaria" loading="lazy">
+          </div>
+          <div class="estudio__badge">
+            <img src="img/isotipo.png" alt="" width="503" height="500">
+            <span>Respaldo legal<br>en cada operación</span>
+          </div>
+        </div>
+        <div class="estudio__text">
+          <div class="reveal">
+            <h2 id="est-title" class="h2">Estudio jurídico que te cuida en cada firma.</h2>
+            <p class="head__lead">Antes de comprar, vender o alquilar, revisamos cada detalle legal para que tomes decisiones con información clara y sin sorpresas.</p>
+          </div>
+          <ul class="services">
+            <li class="reveal" style="--d:0"><div><h3>Compraventa y boletos</h3><p>Redacción y revisión de reservas, boletos y acompañamiento hasta la escritura.</p></div></li>
+            <li class="reveal" style="--d:1"><div><h3>Contratos de alquiler</h3><p>Contratos claros y ajustados a la normativa vigente, para propietarios e inquilinos.</p></div></li>
+            <li class="reveal" style="--d:2"><div><h3>Sucesiones y títulos</h3><p>Tramitación de sucesiones, estudio de títulos y regularización dominial.</p></div></li>
+            <li class="reveal" style="--d:3"><div><h3>Asesoramiento a inversores</h3><p>Análisis legal de desarrollos, fideicomisos y compras en pozo.</p></div></li>
+          </ul>
+          <a href="#contacto" class="btn btn--navy reveal" data-motivo="Asesoría legal">
+            <span>Consultar al estudio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--contact" id="contacto" data-nav="dark" aria-labelledby="con-title">
+      <div class="wrap contact">
+        <div class="contact__intro reveal">
+          <h2 id="con-title" class="h2">Hablemos de tu próximo paso.</h2>
+          <p class="head__lead">Escribinos por WhatsApp para una respuesta rápida o dejanos tu consulta y te contactamos a la brevedad.</p>
+
+          <div class="direct">
+            <a class="direct__item direct__item--wa" data-wa href="#">
+              <span class="direct__ic"><svg><use href="#i-wa"/></svg></span>
+              <span><b>WhatsApp</b><small>Respuesta rápida</small></span>
+              <svg class="direct__go"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="direct__item" data-ig href="#" target="_blank" rel="noopener">
+              <span class="direct__ic"><svg><use href="#i-ig"/></svg></span>
+              <span><b>Instagram</b><small data-ig-user>@pavanelegeapropiedades</small></span>
+              <svg class="direct__go"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="direct__item" data-mail href="#">
+              <span class="direct__ic"><svg><use href="#i-mail"/></svg></span>
+              <span><b>Email</b><small data-mail-text>PavanelEgeaNI@gmail.com</small></span>
+              <svg class="direct__go"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form reveal" style="--d:1">
+          <form class="form" id="form" novalidate>
+            <div class="form__state" id="formOk" hidden>
+              <span class="form__ok"><svg><use href="#i-check"/></svg></span>
+              <h3>¡Gracias! Recibimos tu consulta.</h3>
+              <p>Te vamos a responder a la brevedad. Si es urgente, escribinos por WhatsApp.</p>
+              <button type="button" class="btn btn--ghost" id="formAgain"><span>Enviar otra consulta</span></button>
+            </div>
+
+            <div class="form__fields" id="formFields">
+              <h3 class="form__title">Dejanos tu consulta</h3>
+              <div class="field">
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" autocapitalize="words" enterkeyhint="next" placeholder=" " required>
+                <label for="f-nombre">Nombre y apellido</label>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" enterkeyhint="next" placeholder=" ">
+                  <label for="f-tel">Teléfono</label>
+                </div>
+                <div class="field">
+                  <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder=" " required>
+                  <label for="f-email">Email</label>
+                </div>
+              </div>
+              <div class="field field--select">
+                <select id="f-motivo" name="motivo">
+                  <option>Comprar una propiedad</option>
+                  <option>Alquilar una propiedad</option>
+                  <option>Vender o alquilar mi propiedad</option>
+                  <option>Desarrollos / inversión</option>
+                  <option>Asesoría legal</option>
+                  <option>Otro</option>
+                </select>
+                <label for="f-motivo">Motivo</label>
+              </div>
+              <div class="field">
+                <textarea id="f-msg" name="mensaje" rows="4" placeholder=" " required></textarea>
+                <label for="f-msg">Tu consulta</label>
+              </div>
+              <!-- honeypot anti-spam -->
+              <input type="text" name="empresa" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <p class="form__err" id="formErr" role="alert" hidden></p>
+              <button type="submit" class="btn btn--sand btn--block" id="formBtn">
+                <span>Enviar consulta</span>
+              </button>
+              <p class="form__note">Tus datos solo se usan para responder tu consulta.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-nav="dark">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo-vertical-light.png" alt="Pavanel Egea Propiedades" width="788" height="698" loading="lazy">
+        <p>Imaginando un futuro junto a vos.</p>
+      </div>
+      <nav class="footer__col" aria-label="Secciones">
+        <h2 class="footer__h">Secciones</h2>
+        <a href="#propiedades">Propiedades</a>
+        <a href="#desarrollos">Desarrollos</a>
+        <a href="#estudio">Estudio jurídico</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__col">
+        <h2 class="footer__h">Contacto</h2>
+        <a data-wa href="#">WhatsApp</a>
+        <a data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+        <a data-mail href="#"><span data-mail-text>PavanelEgeaNI@gmail.com</span></a>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <span>© <span id="year">2026</span> Pavanel Egea Propiedades. Todos los derechos reservados.</span>
+      <span>Corredor/a inmobiliario/a matriculado/a · Mat. N.º 0000</span>
+    </div>
+  </footer>
+
+  <!-- ============ WhatsApp flotante ============ -->
+  <a class="wa-float" id="waFloat" data-wa href="#" aria-label="Escribinos por WhatsApp">
+    <span class="wa-float__tip">Consultar por WhatsApp</span>
+    <span class="wa-float__btn"><svg><use href="#i-wa"/></svg></span>
+  </a>
+
+  <!-- ============ Ficha (modal) ============ -->
+  <dialog class="sheet" id="sheet" aria-labelledby="sheetTitle">
+    <div class="sheet__panel">
+      <div class="sheet__handle" id="sheetHandle" aria-hidden="true"><span></span></div>
+      <button class="sheet__close" id="sheetClose" aria-label="Cerrar ficha"><svg><use href="#i-close"/></svg></button>
+      <div class="gallery" id="gallery">
+        <div class="gallery__track" id="galleryTrack"></div>
+        <button class="gallery__nav gallery__nav--prev" id="galPrev" aria-label="Foto anterior"><svg><use href="#i-arrow-l"/></svg></button>
+        <button class="gallery__nav gallery__nav--next" id="galNext" aria-label="Foto siguiente"><svg><use href="#i-arrow-r"/></svg></button>
+        <span class="gallery__count" id="galCount">1 / 1</span>
+      </div>
+      <div class="gallery__thumbs" id="galThumbs"></div>
+      <div class="sheet__body" id="sheetBody"></div>
+    </div>
+  </dialog>
+
+  <script src="js/data.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
